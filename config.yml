@@ -1,0 +1,13 @@
+CONFIG:
+  BACKUP:
+      host: localhost
+      username: postgres
+      password: yourpasword
+      port: 5432
+      database: databasename
+      output: backupname.dump
+  RESTORE:
+      username: postgres
+      password: yourpassword
+      database: databasename
+      from_backup: backup/backupname.dump
